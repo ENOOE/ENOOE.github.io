@@ -7,7 +7,6 @@ const year = document.querySelector("#year");
 const proofModal = document.querySelector("#proof-modal");
 const proofBody = document.querySelector("#proof-body");
 const proofTitle = document.querySelector("#proof-title");
-const proofTriggers = document.querySelectorAll("[data-proof-src]");
 const proofCloseControls = document.querySelectorAll("[data-proof-close]");
 
 // Keep the copyright year current without editing HTML every year.
@@ -96,10 +95,12 @@ const closeProof = () => {
   document.body.classList.remove("modal-open");
 };
 
-proofTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", () => {
-    openProof(trigger.dataset.proofSrc, trigger.dataset.proofType);
-  });
+document.addEventListener("click", (event) => {
+  const trigger = event.target.closest("[data-proof-src]");
+  if (!trigger) return;
+
+  event.preventDefault();
+  openProof(trigger.dataset.proofSrc, trigger.dataset.proofType);
 });
 
 proofCloseControls.forEach((control) => {

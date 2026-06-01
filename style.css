@@ -45,6 +45,8 @@ a {
 }
 
 .cert-link {
+  appearance: none;
+  -webkit-appearance: none;
   display: inline-block;
   margin-left: 4px;
   padding: 0;

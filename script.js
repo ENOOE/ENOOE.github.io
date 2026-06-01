@@ -4,6 +4,11 @@ const navMenu = document.querySelector("#nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const sections = document.querySelectorAll("main section[id]");
 const year = document.querySelector("#year");
+const proofModal = document.querySelector("#proof-modal");
+const proofBody = document.querySelector("#proof-body");
+const proofTitle = document.querySelector("#proof-title");
+const proofTriggers = document.querySelectorAll("[data-proof-src]");
+const proofCloseControls = document.querySelectorAll("[data-proof-close]");
 
 // Keep the copyright year current without editing HTML every year.
 if (year) {
@@ -58,3 +63,49 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+// Show proof materials inside the current page without navigating away.
+const openProof = (src, type) => {
+  if (!proofModal || !proofBody) return;
+
+  proofBody.innerHTML = "";
+  if (proofTitle) proofTitle.textContent = "Certificate";
+
+  if (type === "image") {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "Certificate preview";
+    proofBody.appendChild(img);
+  } else {
+    const frame = document.createElement("iframe");
+    frame.src = `${src}#toolbar=1&navpanes=0`;
+    frame.title = "Certificate preview";
+    proofBody.appendChild(frame);
+  }
+
+  proofModal.classList.add("is-open");
+  proofModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+};
+
+const closeProof = () => {
+  if (!proofModal || !proofBody) return;
+  proofModal.classList.remove("is-open");
+  proofModal.setAttribute("aria-hidden", "true");
+  proofBody.innerHTML = "";
+  document.body.classList.remove("modal-open");
+};
+
+proofTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    openProof(trigger.dataset.proofSrc, trigger.dataset.proofType);
+  });
+});
+
+proofCloseControls.forEach((control) => {
+  control.addEventListener("click", closeProof);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeProof();
+});

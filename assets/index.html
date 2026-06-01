@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yinuo Zhang's academic homepage for AI security, LLM security, federated learning security, and trustworthy AI."
+    />
+    <title>Yinuo Zhang | Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+      Minimal academic homepage.
+      Keep index.html, style.css, script.js, and assets/ together for GitHub Pages.
+    -->
+
+    <header class="site-header" id="top">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#top">Homepage</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#honors">Awards</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page">
+      <aside class="sidebar" aria-label="Profile">
+        <img class="avatar" src="assets/profile.jpg" alt="Portrait of Yinuo Zhang" />
+
+        <h1>Yinuo Zhang</h1>
+        <p class="role">undergraduate student at<br />Wuhan University</p>
+
+        <ul class="contact-list">
+          <li><span aria-hidden="true">📍</span> Wuhan, China</li>
+          <li>
+            <span aria-hidden="true">✉️</span>
+            <a href="mailto:zhangyinuoao@163.com">Email</a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="content">
+        <section class="section" id="about" aria-labelledby="about-title">
+          <p class="kicker">Academic Homepage</p>
+          <p class="intro">
+            👋 Hi, my name is <strong>Yinuo Zhang</strong> (Chinese: 章一诺), an
+            undergraduate student majoring in <strong>Cybersecurity</strong> at
+            the <strong>School of Cyber Science and Engineering</strong>,
+            <strong>Wuhan University</strong>. I am a member of the
+            <a href="https://nisplab.whu.edu.cn/" target="_blank" rel="noopener">
+              <strong>NIS&amp;P Lab</strong>
+            </a>,
+            advised by
+            <a href="https://nisplab.whu.edu.cn/People.htm" target="_blank" rel="noopener">
+              <strong>Prof. Qian Wang</strong>
+            </a>.
+          </p>
+          <p class="intro">
+            📈 My academic performance stands at
+            <strong>GPA 3.83/4.0</strong><button class="cert-link" type="button" data-proof-src="assets/proofs/transcript.pdf" data-proof-type="pdf">「Certificate」</button>,
+            with a
+            <strong>major rank of 5/168</strong><button class="cert-link" type="button" data-proof-src="assets/proofs/transcript.pdf" data-proof-type="pdf">「Certificate」</button>. I am interested in
+            graduate research opportunities in computer science, artificial
+            intelligence, and AI security.
+          </p>
+
+          <h2 id="about-title"><span>01</span> 🧭 Research</h2>
+          <p>
+            My research interests focus on AI security and trustworthy machine
+            learning, especially:
+          </p>
+          <ul>
+            <li>🛡️ <strong>Large Language Model Security and Risk Evaluation</strong></li>
+            <li>🔗 <strong>Federated Learning Security and Backdoor Defense</strong></li>
+            <li>✅ <strong>Trustworthy AI, Robustness, and Security-Critical Evaluation</strong></li>
+          </ul>
+        </section>
+
+        <section class="section" id="news" aria-labelledby="news-title">
+          <h2 id="news-title"><span>02</span> 📌 News</h2>
+          <ul class="news-list">
+            <li>
+              <strong><em>2026.06</em>:</strong>
+              💡 Received the <strong>Lei Jun Computer Innovation and Development Scholarship</strong>.
+            </li>
+            <li>
+              <strong><em>2026.05</em>:</strong>
+              📝 Submitted a manuscript on backdoor defense for federated graph
+              learning to <strong>NeurIPS 2026</strong> as a co-first author.
+            </li>
+            <li>
+              <strong><em>2026.05</em>:</strong>
+              🚀 Advanced to the national final of the
+              <strong>Chinese Collegiate Computing Competition</strong>.
+            </li>
+            <li>
+              <strong><em>2026.04</em>:</strong>
+              📝 Submitted a manuscript on LLM steering risk evaluation to
+              <strong>IEEE TIFS</strong> as a co-first author.
+            </li>
+            <li>
+              <strong><em>2025.09</em>:</strong>
+              🏆 Won the
+              <strong>National First Prize</strong>
+              in the China Undergraduate Mathematical Contest in Modeling.
+            </li>
+            <li>
+              <strong><em>2025.08</em>:</strong>
+              🛡️ Won the
+              <strong>National First Prize</strong>
+              in the China Undergraduate AI Security Competition.
+            </li>
+            <li>
+              <strong><em>2025.05</em>:</strong>
+              🎓 Received the
+              <strong>Huawei Scholarship</strong>.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="publications" aria-labelledby="publications-title">
+          <h2 id="publications-title"><span>03</span> 📄 Manuscripts / Preprints</h2>
+
+          <article class="paper">
+            <figure class="paper-thumb">
+              <img
+                src="assets/proofs/framework1.png"
+                alt="Main framework of consistency-verified backdoor defense for federated graph learning"
+              />
+            </figure>
+            <div class="paper-main">
+              <h3>
+                [1] Consistency-Verified Backdoor Defense for Federated Graph
+                Learning via Cross-Layer Drift
+              </h3>
+              <div class="badges">
+                <span>Co-first Author</span>
+                <span>Under Review at NeurIPS 2026</span>
+              </div>
+              <p>
+                <strong>Research Direction:</strong> Federated graph learning,
+                backdoor defense, cross-layer representation drift, and
+                risk-aware aggregation.
+              </p>
+            </div>
+          </article>
+
+          <article class="paper">
+            <figure class="paper-thumb">
+              <img
+                src="assets/proofs/framework2.png"
+                alt="Main framework of STEERRISK for security-critical LLM steering evaluation"
+              />
+            </figure>
+            <div class="paper-main">
+              <h3>
+                [2] STEERRISK: Systematic Evaluation of LLM Steering Under
+                Security-Critical Risks
+              </h3>
+              <div class="badges">
+                <span>Co-first Author</span>
+                <span>Under Review at IEEE TIFS</span>
+              </div>
+              <p>
+                <strong>Research Direction:</strong> LLM steering, AI safety
+                risk evaluation, jailbreak, prompt injection, privacy,
+                reliability, and security-critical model assessment.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="section" id="honors" aria-labelledby="honors-title">
+          <h2 id="honors-title"><span>04</span> 🏅 Honors and Awards</h2>
+          <div class="award-blocks">
+            <div>
+              <h3>Scholarships and Honors</h3>
+              <ul>
+                <li>
+                  🌟
+                  Outstanding Student, Wuhan University<button class="cert-link" type="button" data-proof-src="assets/proofs/outstanding-student.pdf" data-proof-type="pdf">「Certificate」</button>
+                </li>
+                <li>🔬 Advanced Individual in Science and Innovation, School of Cyber Science and Engineering</li>
+                <li>
+                  🎓
+                  Huawei Scholarship, Wuhan University<button class="cert-link" type="button" data-proof-src="assets/proofs/huawei-scholarship.pdf" data-proof-type="pdf">「Certificate」</button>
+                </li>
+                <li>💡 Lei Jun Computer Innovation and Development Scholarship</li>
+                <li>
+                  🎓
+                  Wuhan University Second-Class Scholarship<button class="cert-link" type="button" data-proof-src="assets/proofs/whu-second-class-scholarship.pdf" data-proof-type="pdf">「Certificate」</button>
+                </li>
+                <li>✨ Base Extraordinary Scholarship</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Competition Awards</h3>
+              <ul>
+                <li>
+                  🏆
+                  National First Prize, China Undergraduate Mathematical Contest in Modeling, 2025<button class="cert-link" type="button" data-proof-src="assets/proofs/cumcm-national-first-prize.jpg" data-proof-type="image">「Certificate」</button>
+                </li>
+                <li>
+                  🛡️
+                  National First Prize, China Undergraduate AI Security Competition, 2025<button class="cert-link" type="button" data-proof-src="assets/proofs/ai-security-competition-national-first-prize.jpg" data-proof-type="image">「Certificate」</button>
+                </li>
+                <li>
+                  🥇
+                  Provincial First Prize, Huazhong Cup Mathematical Modeling Contest, 2025<button class="cert-link" type="button" data-proof-src="assets/proofs/huazhong-cup-provincial-first-prize.jpeg" data-proof-type="image">「Certificate」</button>
+                </li>
+                <li>
+                  💻
+                  Two Provincial Second Prizes, Chinese Collegiate Computing Competition, 2025<button class="cert-link" type="button" data-proof-src="assets/proofs/computer-design-competition.jpg" data-proof-type="image">「Certificate」</button>
+                </li>
+                <li>💻 Provincial Third Prize, China Collegiate Computing Contest, 2025</li>
+                <li>📐 Provincial Third Prize, Chinese Mathematics Competition, 2024</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="education" aria-labelledby="education-title">
+          <h2 id="education-title"><span>05</span> 📚 Educations</h2>
+          <p>
+            <strong>Wuhan University</strong>, School of Cyber Science and
+            Engineering, B.Eng. Candidate in Cybersecurity, 2023.09 - Present
+          </p>
+          <ul>
+            <li>
+              <strong>GPA:</strong>
+              3.83 / 4.00
+            </li>
+            <li>
+              <strong>Major Rank:</strong>
+              5 / 168
+            </li>
+       
+
+          </ul>
+          <p class="proof-links">
+            Language certificates:
+            CET-4 602<button class="cert-link" type="button" data-proof-src="assets/proofs/cet4.pdf" data-proof-type="pdf">「Certificate」</button>,
+            CET-6 587<button class="cert-link" type="button" data-proof-src="assets/proofs/cet6.pdf" data-proof-type="pdf">「Certificate」</button>.
+          </p>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title"><span>06</span> 🧩 Skills</h2>
+          <ul>
+            <li>
+              <strong>Programming and experiments:</strong> Python, C, experiment
+              scripting, model debugging, data processing, and statistical analysis.
+            </li>
+            <li>
+              <strong>Research workflow:</strong> literature review, experiment
+              organization, result visualization, manuscript writing, and presentation.
+            </li>
+            <li>
+              <strong>Languages:</strong> fluent academic reading and writing in
+              English.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Yinuo Zhang. Last updated: June 2026.</p>
+    </footer>
+
+    <div class="proof-modal" id="proof-modal" aria-hidden="true">
+      <div class="proof-backdrop" data-proof-close></div>
+      <div class="proof-dialog" role="dialog" aria-modal="true" aria-labelledby="proof-title">
+        <div class="proof-header">
+          <h2 id="proof-title">Certificate</h2>
+          <button class="proof-close" type="button" data-proof-close aria-label="Close certificate preview">×</button>
+        </div>
+        <div class="proof-body" id="proof-body"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
